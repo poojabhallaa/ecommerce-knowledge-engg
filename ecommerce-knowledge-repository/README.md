@@ -1,9 +1,9 @@
-# Food Delivery App — Knowledge Repository
+# Food Delivery App - Knowledge Repository
 
 This repository is a structured knowledge base for **QuickBite**, a food delivery
 platform that connects customers, restaurants, and delivery riders. It captures
-how the business operates — what it sells, how orders flow, and the rules that
-govern the platform — in a form that can be read by humans and queried
+how the business operates - what it sells, how orders flow, and the rules that
+govern the platform - in a form that can be read by humans and queried
 programmatically.
 
 ## Structure
@@ -31,11 +31,11 @@ ecommerce-knowledge-repository/
 
 QuickBite operates a three-sided marketplace:
 
-- **Customers** — browse restaurants, place orders, track delivery, pay, and
+- **Customers** - browse restaurants, place orders, track delivery, pay, and
   request refunds/support.
-- **Restaurants** — manage menus, accept/reject orders, and prepare food within
+- **Restaurants** - manage menus, accept/reject orders, and prepare food within
   a target time.
-- **Riders** — accept delivery jobs, pick up food, and deliver it to customers.
+- **Riders** - accept delivery jobs, pick up food, and deliver it to customers.
 
 ## Using the Knowledge Engine
 
