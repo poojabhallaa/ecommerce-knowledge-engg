@@ -7,7 +7,7 @@ Loads structured data (data/platform_data.json) and business rules
 - calculating order totals
 - checking cancellation/refund eligibility
 
-Maintainer: Pooja Bhalla 13901012023
+ Pooja Bhalla 13901012023
 """
 
 import json
