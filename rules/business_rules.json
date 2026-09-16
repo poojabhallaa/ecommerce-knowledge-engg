@@ -28,7 +28,7 @@
   "promotions": {
     "max_promo_codes_per_order": 1,
     "discount_applies_to": ["subtotal"],
-    "sample_promos": [
+    "active_promos": [
       {
         "code": "WELCOME10",
         "type": "percentage",
@@ -41,6 +41,20 @@
         "type": "free_delivery",
         "value": 100,
         "min_order_value": 20.0,
+        "restricted_to": "all_customers"
+      },
+      {
+        "code": "WEEKEND15",
+        "type": "percentage",
+        "value": 15,
+        "min_order_value": 25.0,
+        "restricted_to": "all_customers"
+      },
+      {
+        "code": "BIGORDER5",
+        "type": "flat",
+        "value": 5,
+        "min_order_value": 40.0,
         "restricted_to": "all_customers"
       }
     ]

@@ -34,11 +34,14 @@ Each menu item has:
 - Restaurants can run item-level or cart-level promotions (see `policies.md`
   for how discounts interact with delivery fees).
 
-## Sample Catalog Snapshot
+## Current Catalog Snapshot
 
-See `data/sample_data.json` for structured records. As of the last sync, the
-sample data includes:
+See `data/platform_data.json` for structured records. As of the last sync, the
+live catalog includes:
 
-- **Restaurants**: Pasta Palace (Italian), Spice Route (Indian), Burger Barn (Fast Food)
+- **Restaurants**: Pasta Palace (Italian), Spice Route (Indian), Burger Barn
+  (Fast Food), Sakura Sushi House (Japanese), Taco Fiesta (Mexican),
+  Golden Wok (Chinese), The Green Bowl (Healthy/Salads), Istanbul Grill
+  (Turkish/Mediterranean)
 - **Categories**: Starters, Main Course, Dessert, Beverages
-- Each restaurant has 3–5 sample menu items with prices and availability flags
+- Each restaurant carries 4–7 menu items with prices and availability flags

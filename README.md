@@ -9,27 +9,29 @@ programmatically.
 ## Structure
 
 ```
-ecommerce-knowledge-repository/
+.
 │
-├── README.md                  # This file
+├── README.md                    # This file
 │
 ├── knowledge/
-│   ├── products.md             # Restaurants, menus, and catalog knowledge
-│   ├── orders.md                # Order lifecycle and fulfillment knowledge
-│   └── policies.md              # Refunds, cancellations, and platform policies
+│   ├── products.md               # Restaurants, menus, and catalog knowledge
+│   ├── orders.md                  # Order lifecycle and fulfillment knowledge
+│   └── policies.md                # Refunds, cancellations, and platform policies
 │
 ├── rules/
-│   └── business_rules.json      # Machine-readable business rules
+│   └── business_rules.json        # Machine-readable business rules
 │
 ├── data/
-│   └── sample_data.json         # Sample restaurants, menu items, orders, riders
+│   └── platform_data.json         # Live restaurants, menu items, orders, riders
 │
-└── knowledge_engine.py          # Python engine to query the knowledge base
+└── knowledge_engine.py            # Python engine to query the knowledge base
 ```
 
 ## Domain Overview
 
-QuickBite operates a three-sided marketplace:
+QuickBite operates a three-sided marketplace across 8 partner restaurants
+spanning Italian, Indian, Japanese, Mexican, Chinese, Turkish/Mediterranean,
+Fast Food, and Healthy/Salads cuisines:
 
 - **Customers** - browse restaurants, place orders, track delivery, pay, and
   request refunds/support.
@@ -39,7 +41,7 @@ QuickBite operates a three-sided marketplace:
 
 ## Using the Knowledge Engine
 
-`knowledge_engine.py` loads `data/sample_data.json` and `rules/business_rules.json`
+`knowledge_engine.py` loads `data/platform_data.json` and `rules/business_rules.json`
 and exposes simple query functions, e.g.:
 
 ```bash
@@ -55,7 +57,7 @@ This runs a demo that:
 
 | Question | Where to look |
 |---|---|
-| What restaurants/items exist? | `knowledge/products.md`, `data/sample_data.json` |
+| What restaurants/items exist? | `knowledge/products.md`, `data/platform_data.json` |
 | How does an order move from placed to delivered? | `knowledge/orders.md` |
 | What are the refund/cancellation rules? | `knowledge/policies.md`, `rules/business_rules.json` |
 | How do I compute a price or check a rule programmatically? | `knowledge_engine.py` |

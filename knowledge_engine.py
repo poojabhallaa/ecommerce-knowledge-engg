@@ -1,18 +1,20 @@
 """
 Knowledge engine for the QuickBite food delivery knowledge repository.
 
-Loads structured data (data/sample_data.json) and business rules
+Loads structured data (data/platform_data.json) and business rules
 (rules/business_rules.json) and exposes query helpers for:
 - looking up restaurants and menu items
 - calculating order totals
 - checking cancellation/refund eligibility
+
+Maintainer: Pooja Bhalla 13901012023
 """
 
 import json
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.join(BASE_DIR, "data", "sample_data.json")
+DATA_PATH = os.path.join(BASE_DIR, "data", "platform_data.json")
 RULES_PATH = os.path.join(BASE_DIR, "rules", "business_rules.json")
 
 
@@ -64,7 +66,7 @@ class KnowledgeEngine:
         if not code:
             return None
         return next(
-            (p for p in self.rules["promotions"]["sample_promos"] if p["code"] == code),
+            (p for p in self.rules["promotions"]["active_promos"] if p["code"] == code),
             None,
         )
 
@@ -91,6 +93,8 @@ class KnowledgeEngine:
         if promo and subtotal >= promo["min_order_value"]:
             if promo["type"] == "percentage":
                 discount = subtotal * (promo["value"] / 100.0)
+            elif promo["type"] == "flat":
+                discount = promo["value"]
             elif promo["type"] == "free_delivery":
                 delivery_fee = 0.0
 

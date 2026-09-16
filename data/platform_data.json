@@ -1,0 +1,280 @@
+{
+  "restaurants": [
+    {
+      "restaurant_id": "R001",
+      "name": "Pasta Palace",
+      "cuisine": "Italian",
+      "rating": 4.5,
+      "avg_prep_time_minutes": 20,
+      "is_open": true,
+      "min_order_value": 10.0,
+      "delivery_radius_km": 8,
+      "address": "221 Elm Street, Downtown",
+      "phone": "+1-415-555-0132"
+    },
+    {
+      "restaurant_id": "R002",
+      "name": "Spice Route",
+      "cuisine": "Indian",
+      "rating": 4.7,
+      "avg_prep_time_minutes": 25,
+      "is_open": true,
+      "min_order_value": 12.0,
+      "delivery_radius_km": 10,
+      "address": "48 Curry Lane, Midtown",
+      "phone": "+1-415-555-0198"
+    },
+    {
+      "restaurant_id": "R003",
+      "name": "Burger Barn",
+      "cuisine": "Fast Food",
+      "rating": 4.2,
+      "avg_prep_time_minutes": 12,
+      "is_open": false,
+      "min_order_value": 8.0,
+      "delivery_radius_km": 6,
+      "address": "77 Grill Ave, Uptown",
+      "phone": "+1-415-555-0111"
+    },
+    {
+      "restaurant_id": "R004",
+      "name": "Sakura Sushi House",
+      "cuisine": "Japanese",
+      "rating": 4.8,
+      "avg_prep_time_minutes": 18,
+      "is_open": true,
+      "min_order_value": 15.0,
+      "delivery_radius_km": 9,
+      "address": "9 Cherry Blossom Rd, Riverside",
+      "phone": "+1-415-555-0176"
+    },
+    {
+      "restaurant_id": "R005",
+      "name": "Taco Fiesta",
+      "cuisine": "Mexican",
+      "rating": 4.4,
+      "avg_prep_time_minutes": 15,
+      "is_open": true,
+      "min_order_value": 9.0,
+      "delivery_radius_km": 7,
+      "address": "35 Salsa St, Old Town",
+      "phone": "+1-415-555-0144"
+    },
+    {
+      "restaurant_id": "R006",
+      "name": "Golden Wok",
+      "cuisine": "Chinese",
+      "rating": 4.3,
+      "avg_prep_time_minutes": 22,
+      "is_open": true,
+      "min_order_value": 11.0,
+      "delivery_radius_km": 8,
+      "address": "160 Dragon Court, Chinatown",
+      "phone": "+1-415-555-0159"
+    },
+    {
+      "restaurant_id": "R007",
+      "name": "The Green Bowl",
+      "cuisine": "Healthy / Salads",
+      "rating": 4.6,
+      "avg_prep_time_minutes": 10,
+      "is_open": true,
+      "min_order_value": 10.0,
+      "delivery_radius_km": 6,
+      "address": "5 Kale Way, Westside",
+      "phone": "+1-415-555-0187"
+    },
+    {
+      "restaurant_id": "R008",
+      "name": "Istanbul Grill",
+      "cuisine": "Turkish / Mediterranean",
+      "rating": 4.6,
+      "avg_prep_time_minutes": 20,
+      "is_open": true,
+      "min_order_value": 12.0,
+      "delivery_radius_km": 9,
+      "address": "212 Bosphorus Blvd, Eastside",
+      "phone": "+1-415-555-0163"
+    }
+  ],
+  "menu_items": [
+    { "item_id": "I001", "restaurant_id": "R001", "name": "Spaghetti Carbonara", "category": "Main Course", "price": 12.5, "is_veg": false, "is_available": true },
+    { "item_id": "I002", "restaurant_id": "R001", "name": "Margherita Pizza", "category": "Main Course", "price": 10.0, "is_veg": true, "is_available": true },
+    { "item_id": "I003", "restaurant_id": "R001", "name": "Garlic Bread", "category": "Starters", "price": 4.5, "is_veg": true, "is_available": true },
+    { "item_id": "I004", "restaurant_id": "R001", "name": "Tiramisu", "category": "Dessert", "price": 5.0, "is_veg": true, "is_available": false },
+    { "item_id": "I012", "restaurant_id": "R001", "name": "Fettuccine Alfredo", "category": "Main Course", "price": 11.75, "is_veg": true, "is_available": true },
+    { "item_id": "I013", "restaurant_id": "R001", "name": "Caprese Salad", "category": "Starters", "price": 6.5, "is_veg": true, "is_available": true },
+
+    { "item_id": "I005", "restaurant_id": "R002", "name": "Butter Chicken", "category": "Main Course", "price": 13.0, "is_veg": false, "is_available": true },
+    { "item_id": "I006", "restaurant_id": "R002", "name": "Paneer Tikka", "category": "Starters", "price": 9.0, "is_veg": true, "is_available": true },
+    { "item_id": "I007", "restaurant_id": "R002", "name": "Garlic Naan", "category": "Main Course", "price": 2.5, "is_veg": true, "is_available": true },
+    { "item_id": "I008", "restaurant_id": "R002", "name": "Mango Lassi", "category": "Beverages", "price": 3.5, "is_veg": true, "is_available": true },
+    { "item_id": "I014", "restaurant_id": "R002", "name": "Chicken Biryani", "category": "Main Course", "price": 14.0, "is_veg": false, "is_available": true },
+    { "item_id": "I015", "restaurant_id": "R002", "name": "Samosa Chaat", "category": "Starters", "price": 6.0, "is_veg": true, "is_available": true },
+    { "item_id": "I016", "restaurant_id": "R002", "name": "Gulab Jamun", "category": "Dessert", "price": 4.0, "is_veg": true, "is_available": true },
+
+    { "item_id": "I009", "restaurant_id": "R003", "name": "Classic Cheeseburger", "category": "Main Course", "price": 7.5, "is_veg": false, "is_available": true },
+    { "item_id": "I010", "restaurant_id": "R003", "name": "Veggie Burger", "category": "Main Course", "price": 7.0, "is_veg": true, "is_available": true },
+    { "item_id": "I011", "restaurant_id": "R003", "name": "French Fries", "category": "Starters", "price": 3.0, "is_veg": true, "is_available": true },
+    { "item_id": "I017", "restaurant_id": "R003", "name": "Chocolate Milkshake", "category": "Beverages", "price": 4.5, "is_veg": true, "is_available": true },
+
+    { "item_id": "I018", "restaurant_id": "R004", "name": "California Roll", "category": "Main Course", "price": 8.0, "is_veg": false, "is_available": true },
+    { "item_id": "I019", "restaurant_id": "R004", "name": "Salmon Nigiri (6 pc)", "category": "Main Course", "price": 11.0, "is_veg": false, "is_available": true },
+    { "item_id": "I020", "restaurant_id": "R004", "name": "Miso Soup", "category": "Starters", "price": 3.5, "is_veg": true, "is_available": true },
+    { "item_id": "I021", "restaurant_id": "R004", "name": "Edamame", "category": "Starters", "price": 4.0, "is_veg": true, "is_available": true },
+    { "item_id": "I022", "restaurant_id": "R004", "name": "Green Tea Ice Cream", "category": "Dessert", "price": 4.5, "is_veg": true, "is_available": true },
+
+    { "item_id": "I023", "restaurant_id": "R005", "name": "Chicken Tacos (3 pc)", "category": "Main Course", "price": 8.5, "is_veg": false, "is_available": true },
+    { "item_id": "I024", "restaurant_id": "R005", "name": "Veggie Burrito", "category": "Main Course", "price": 9.0, "is_veg": true, "is_available": true },
+    { "item_id": "I025", "restaurant_id": "R005", "name": "Guacamole & Chips", "category": "Starters", "price": 5.5, "is_veg": true, "is_available": true },
+    { "item_id": "I026", "restaurant_id": "R005", "name": "Horchata", "category": "Beverages", "price": 3.0, "is_veg": true, "is_available": true },
+
+    { "item_id": "I027", "restaurant_id": "R006", "name": "Kung Pao Chicken", "category": "Main Course", "price": 12.0, "is_veg": false, "is_available": true },
+    { "item_id": "I028", "restaurant_id": "R006", "name": "Vegetable Fried Rice", "category": "Main Course", "price": 9.5, "is_veg": true, "is_available": true },
+    { "item_id": "I029", "restaurant_id": "R006", "name": "Spring Rolls", "category": "Starters", "price": 5.0, "is_veg": true, "is_available": true },
+    { "item_id": "I030", "restaurant_id": "R006", "name": "Hot & Sour Soup", "category": "Starters", "price": 4.5, "is_veg": true, "is_available": true },
+
+    { "item_id": "I031", "restaurant_id": "R007", "name": "Quinoa Power Bowl", "category": "Main Course", "price": 11.0, "is_veg": true, "is_available": true },
+    { "item_id": "I032", "restaurant_id": "R007", "name": "Grilled Chicken Caesar Salad", "category": "Main Course", "price": 10.5, "is_veg": false, "is_available": true },
+    { "item_id": "I033", "restaurant_id": "R007", "name": "Avocado Toast", "category": "Starters", "price": 7.0, "is_veg": true, "is_available": true },
+    { "item_id": "I034", "restaurant_id": "R007", "name": "Fresh Pressed Juice", "category": "Beverages", "price": 5.0, "is_veg": true, "is_available": true },
+
+    { "item_id": "I035", "restaurant_id": "R008", "name": "Chicken Shawarma Wrap", "category": "Main Course", "price": 9.5, "is_veg": false, "is_available": true },
+    { "item_id": "I036", "restaurant_id": "R008", "name": "Falafel Plate", "category": "Main Course", "price": 8.5, "is_veg": true, "is_available": true },
+    { "item_id": "I037", "restaurant_id": "R008", "name": "Hummus & Pita", "category": "Starters", "price": 5.5, "is_veg": true, "is_available": true },
+    { "item_id": "I038", "restaurant_id": "R008", "name": "Baklava", "category": "Dessert", "price": 4.0, "is_veg": true, "is_available": true }
+  ],
+  "customers": [
+    { "customer_id": "C001", "name": "Alice Johnson", "is_first_time": false, "address": "12 Maple St, Downtown" },
+    { "customer_id": "C002", "name": "Ravi Kumar", "is_first_time": true, "address": "45 Oak Ave, Midtown" },
+    { "customer_id": "C003", "name": "Emily Chen", "is_first_time": false, "address": "88 Birch Blvd, Riverside" },
+    { "customer_id": "C004", "name": "Marcus Webb", "is_first_time": false, "address": "23 Pine Rd, Old Town" },
+    { "customer_id": "C005", "name": "Sofia Martinez", "is_first_time": true, "address": "9 Cedar Ln, Westside" },
+    { "customer_id": "C006", "name": "Daniel Osei", "is_first_time": false, "address": "301 Willow Way, Eastside" }
+  ],
+  "riders": [
+    { "rider_id": "D001", "name": "Sam Lee", "is_available": true, "avg_on_time_rate": 0.96 },
+    { "rider_id": "D002", "name": "Maria Gomez", "is_available": false, "avg_on_time_rate": 0.91 },
+    { "rider_id": "D003", "name": "Tariq Hassan", "is_available": true, "avg_on_time_rate": 0.94 },
+    { "rider_id": "D004", "name": "Nina Petrova", "is_available": true, "avg_on_time_rate": 0.98 }
+  ],
+  "orders": [
+    {
+      "order_id": "O1001",
+      "customer_id": "C001",
+      "restaurant_id": "R001",
+      "rider_id": "D001",
+      "items": [
+        { "item_id": "I001", "quantity": 1 },
+        { "item_id": "I003", "quantity": 2 }
+      ],
+      "status": "DELIVERED",
+      "placed_at": "2026-09-10T18:30:00",
+      "delivered_at": "2026-09-10T19:05:00",
+      "distance_km": 4.2,
+      "payment_method": "card",
+      "promo_code": null
+    },
+    {
+      "order_id": "O1002",
+      "customer_id": "C002",
+      "restaurant_id": "R002",
+      "rider_id": null,
+      "items": [
+        { "item_id": "I005", "quantity": 1 },
+        { "item_id": "I007", "quantity": 2 },
+        { "item_id": "I008", "quantity": 1 }
+      ],
+      "status": "PLACED",
+      "placed_at": "2026-09-16T12:00:00",
+      "delivered_at": null,
+      "distance_km": 5.5,
+      "payment_method": "wallet",
+      "promo_code": "WELCOME10"
+    },
+    {
+      "order_id": "O1003",
+      "customer_id": "C003",
+      "restaurant_id": "R004",
+      "rider_id": "D004",
+      "items": [
+        { "item_id": "I018", "quantity": 2 },
+        { "item_id": "I020", "quantity": 1 },
+        { "item_id": "I022", "quantity": 1 }
+      ],
+      "status": "OUT_FOR_DELIVERY",
+      "placed_at": "2026-09-16T13:10:00",
+      "delivered_at": null,
+      "distance_km": 3.1,
+      "payment_method": "card",
+      "promo_code": null
+    },
+    {
+      "order_id": "O1004",
+      "customer_id": "C004",
+      "restaurant_id": "R005",
+      "rider_id": "D003",
+      "items": [
+        { "item_id": "I023", "quantity": 1 },
+        { "item_id": "I025", "quantity": 1 },
+        { "item_id": "I026", "quantity": 2 }
+      ],
+      "status": "DELIVERED",
+      "placed_at": "2026-09-15T20:00:00",
+      "delivered_at": "2026-09-15T20:42:00",
+      "distance_km": 6.0,
+      "payment_method": "cash_on_delivery",
+      "promo_code": null
+    },
+    {
+      "order_id": "O1005",
+      "customer_id": "C005",
+      "restaurant_id": "R007",
+      "rider_id": null,
+      "items": [
+        { "item_id": "I031", "quantity": 1 },
+        { "item_id": "I034", "quantity": 1 }
+      ],
+      "status": "ACCEPTED",
+      "placed_at": "2026-09-16T11:45:00",
+      "delivered_at": null,
+      "distance_km": 2.4,
+      "payment_method": "wallet",
+      "promo_code": "FREEDEL"
+    },
+    {
+      "order_id": "O1006",
+      "customer_id": "C006",
+      "restaurant_id": "R006",
+      "rider_id": "D002",
+      "items": [
+        { "item_id": "I027", "quantity": 1 },
+        { "item_id": "I029", "quantity": 2 },
+        { "item_id": "I030", "quantity": 1 }
+      ],
+      "status": "PREPARING",
+      "placed_at": "2026-09-16T13:20:00",
+      "delivered_at": null,
+      "distance_km": 4.8,
+      "payment_method": "card",
+      "promo_code": null
+    },
+    {
+      "order_id": "O1007",
+      "customer_id": "C001",
+      "restaurant_id": "R008",
+      "rider_id": null,
+      "items": [
+        { "item_id": "I035", "quantity": 2 },
+        { "item_id": "I037", "quantity": 1 },
+        { "item_id": "I038", "quantity": 2 }
+      ],
+      "status": "CANCELLED",
+      "placed_at": "2026-09-14T19:00:00",
+      "delivered_at": null,
+      "distance_km": 5.0,
+      "payment_method": "card",
+      "promo_code": null
+    }
+  ]
+}
