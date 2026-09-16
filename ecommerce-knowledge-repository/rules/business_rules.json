@@ -1,0 +1,52 @@
+{
+  "pricing": {
+    "tax_rate": 0.05,
+    "delivery": {
+      "base_fee": 1.99,
+      "per_km_rate": 0.5,
+      "max_delivery_fee": 8.0,
+      "free_delivery_threshold": 30.0
+    }
+  },
+  "order_timeouts": {
+    "order_accept_timeout_minutes": 5,
+    "rider_assignment_timeout_minutes": 10,
+    "late_delivery_grace_minutes": 15
+  },
+  "cancellation_policy": {
+    "cancellable_statuses": ["PLACED", "ACCEPTED"],
+    "support_only_statuses": ["PREPARING", "READY_FOR_PICKUP", "RIDER_ASSIGNED", "PICKED_UP", "OUT_FOR_DELIVERY"],
+    "non_cancellable_statuses": ["DELIVERED", "CANCELLED"],
+    "full_refund_statuses": ["PLACED", "ACCEPTED"],
+    "partial_refund_statuses": ["PREPARING"]
+  },
+  "refund_policy": {
+    "refund_processing_days": 5,
+    "complaint_window_hours": 24,
+    "manager_approval_refund_threshold": 50.0
+  },
+  "promotions": {
+    "max_promo_codes_per_order": 1,
+    "discount_applies_to": ["subtotal"],
+    "sample_promos": [
+      {
+        "code": "WELCOME10",
+        "type": "percentage",
+        "value": 10,
+        "min_order_value": 15.0,
+        "restricted_to": "first_time_customers"
+      },
+      {
+        "code": "FREEDEL",
+        "type": "free_delivery",
+        "value": 100,
+        "min_order_value": 20.0,
+        "restricted_to": "all_customers"
+      }
+    ]
+  },
+  "restaurant_performance": {
+    "max_missed_acceptances_per_week": 5,
+    "deprioritization_penalty": "search_rank_lowered"
+  }
+}

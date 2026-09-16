@@ -1,0 +1,92 @@
+{
+  "restaurants": [
+    {
+      "restaurant_id": "R001",
+      "name": "Pasta Palace",
+      "cuisine": "Italian",
+      "rating": 4.5,
+      "avg_prep_time_minutes": 20,
+      "is_open": true,
+      "min_order_value": 10.0,
+      "delivery_radius_km": 8
+    },
+    {
+      "restaurant_id": "R002",
+      "name": "Spice Route",
+      "cuisine": "Indian",
+      "rating": 4.7,
+      "avg_prep_time_minutes": 25,
+      "is_open": true,
+      "min_order_value": 12.0,
+      "delivery_radius_km": 10
+    },
+    {
+      "restaurant_id": "R003",
+      "name": "Burger Barn",
+      "cuisine": "Fast Food",
+      "rating": 4.2,
+      "avg_prep_time_minutes": 12,
+      "is_open": false,
+      "min_order_value": 8.0,
+      "delivery_radius_km": 6
+    }
+  ],
+  "menu_items": [
+    { "item_id": "I001", "restaurant_id": "R001", "name": "Spaghetti Carbonara", "category": "Main Course", "price": 12.5, "is_veg": false, "is_available": true },
+    { "item_id": "I002", "restaurant_id": "R001", "name": "Margherita Pizza", "category": "Main Course", "price": 10.0, "is_veg": true, "is_available": true },
+    { "item_id": "I003", "restaurant_id": "R001", "name": "Garlic Bread", "category": "Starters", "price": 4.5, "is_veg": true, "is_available": true },
+    { "item_id": "I004", "restaurant_id": "R001", "name": "Tiramisu", "category": "Dessert", "price": 5.0, "is_veg": true, "is_available": false },
+
+    { "item_id": "I005", "restaurant_id": "R002", "name": "Butter Chicken", "category": "Main Course", "price": 13.0, "is_veg": false, "is_available": true },
+    { "item_id": "I006", "restaurant_id": "R002", "name": "Paneer Tikka", "category": "Starters", "price": 9.0, "is_veg": true, "is_available": true },
+    { "item_id": "I007", "restaurant_id": "R002", "name": "Garlic Naan", "category": "Main Course", "price": 2.5, "is_veg": true, "is_available": true },
+    { "item_id": "I008", "restaurant_id": "R002", "name": "Mango Lassi", "category": "Beverages", "price": 3.5, "is_veg": true, "is_available": true },
+
+    { "item_id": "I009", "restaurant_id": "R003", "name": "Classic Cheeseburger", "category": "Main Course", "price": 7.5, "is_veg": false, "is_available": true },
+    { "item_id": "I010", "restaurant_id": "R003", "name": "Veggie Burger", "category": "Main Course", "price": 7.0, "is_veg": true, "is_available": true },
+    { "item_id": "I011", "restaurant_id": "R003", "name": "French Fries", "category": "Starters", "price": 3.0, "is_veg": true, "is_available": true }
+  ],
+  "customers": [
+    { "customer_id": "C001", "name": "Alice Johnson", "is_first_time": false, "address": "12 Maple St" },
+    { "customer_id": "C002", "name": "Ravi Kumar", "is_first_time": true, "address": "45 Oak Ave" }
+  ],
+  "riders": [
+    { "rider_id": "D001", "name": "Sam Lee", "is_available": true, "avg_on_time_rate": 0.96 },
+    { "rider_id": "D002", "name": "Maria Gomez", "is_available": false, "avg_on_time_rate": 0.91 }
+  ],
+  "orders": [
+    {
+      "order_id": "O1001",
+      "customer_id": "C001",
+      "restaurant_id": "R001",
+      "rider_id": "D001",
+      "items": [
+        { "item_id": "I001", "quantity": 1 },
+        { "item_id": "I003", "quantity": 2 }
+      ],
+      "status": "DELIVERED",
+      "placed_at": "2026-09-10T18:30:00",
+      "delivered_at": "2026-09-10T19:05:00",
+      "distance_km": 4.2,
+      "payment_method": "card",
+      "promo_code": null
+    },
+    {
+      "order_id": "O1002",
+      "customer_id": "C002",
+      "restaurant_id": "R002",
+      "rider_id": null,
+      "items": [
+        { "item_id": "I005", "quantity": 1 },
+        { "item_id": "I007", "quantity": 2 },
+        { "item_id": "I008", "quantity": 1 }
+      ],
+      "status": "PLACED",
+      "placed_at": "2026-09-16T12:00:00",
+      "delivered_at": null,
+      "distance_km": 5.5,
+      "payment_method": "wallet",
+      "promo_code": "WELCOME10"
+    }
+  ]
+}
